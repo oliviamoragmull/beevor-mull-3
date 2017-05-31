@@ -1,0 +1,262 @@
+/* 
+Project Name: Beevor Mull Architects
+Client: Beevor Mull Architects
+Author: Olivia Mull 
+*/
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+/*img {
+	max-width:100%;
+}*/
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+body {
+  font-family: 'Roboto', sans-serif;;
+  background-color: #f5f5dc !important;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: #002266;
+  display:block;
+  margin:0 1rem 0;
+  /*  background-image: url(images/mull.gif) no-repeat fixed center;
+  background:url("../images/mull-3.gif") no-repeat center fixed;
+  background-size:150%;*/
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  margin:0 1rem 0 0;
+  padding-top:1rem;
+  display:block;
+}
+
+main {
+  padding-top: 0px;
+}
+
+div {
+    cursor:move;
+}
+
+
+a {
+    text-decoration: none;
+    color: #002266;
+
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #002266;
+  background-color:#ffe4e1;
+}
+
+.work {
+   list-style-type: none;
+   padding-left: 0;
+}
+
+/*.work li {
+  list-style-type: none;
+}*/
+
+.menu {
+    margin:0;
+    padding-left: 0px;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+h1 {
+    margin:0;
+    padding-top:0.1rem;
+    font-weight:normal;
+    text-decoration: underline;
+    color: #002266;
+}
+
+h1 a {
+  background-color:#ffe4e1;
+}
+
+.column {
+  width: 25%;
+  float: left;
+  padding:1rem 0.5rem 1rem;
+/*  cursor: url('../images/cursor-drag1.jpg'), auto;*/
+}
+
+p, ul {
+  margin:0 auto;
+}
+
+#columm-one {
+    display: inline;
+}
+
+#description {
+  font-size: 13px;
+  color: #002266;
+}
+/*
+ul {
+  margin-bottom:0;
+}*/
+
+/******************************************
+/* MAIN COLUMNS
+/*******************************************/
+
+/*.main-column-one {
+  width: 30%;
+  float: left;
+  padding:0 0.5rem 1rem;
+}
+*/
+.main-column-two {
+  width: 100%;
+  height: 100%;
+  float: left;
+  padding:0 0.5rem 1rem;
+}
+
+.main-column-two img {
+  display: block;
+  border: none;
+  margin: 0 auto;
+}
+
+/******************************************
+/* PAGE CLASSES
+/*******************************************/
+
+/*#page {
+ background: url("../images/quadratura-1a.jpg") no-repeat fixed center;
+}*/
+
+#page #description {
+ background-color:#ffe4e1;
+}
+
+.on-page {
+  text-decoration: underline;
+  background-color:#ffe4e1;
+}
+
+.footer {
+    position:fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    width: 100%;
+    text-align:center;
+}
+
+/******************************************
+/* ICON
+/*******************************************/
+
+/* set the size and position of the icon */
+/*.icon-plus {
+  position: relative;
+  top:50%;
+  left:50%;
+  width: 2rem;
+  height: 2rem;
+  transform: translate(-50%, -50%);
+}*/
+
+/* vertical line */
+/*.icon-plus:before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 44%;
+  width: 12%;
+  height: 100%;
+  background-color: #ffe4e1;
+}*/
+/* horizontal line */
+/*.icon-plus:after {
+  content:"";
+  position: absolute;
+  top:44%;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  background-color: #ffe4e1;
+}*/
+
+.material-icons { 
+  font-size: 4rem; 
+  color:#ffe4e1;
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* MOBILE                  
+/*******************************************/
+
+@media screen and (min-width: 800px)
+              and (max-width: 1025px) {
+ 
+body {
+    width: calc(100% - 40px);    
+}
+  
+}
+
+
+@media screen and (min-width: 310px)
+              and (max-width: 800px) {
+ 
+body {
+    width: calc(100% - 40px);
+}
+
+.column {
+  width: 100%;
+}
+
+.hide {
+  display:none;
+}
+
+/*.main-column-one {
+  width: 15%
+}*/
+
+.main-column-two {
+  width: 100%;
+}           
